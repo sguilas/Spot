@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spot_app/constants.dart';
 
 void main() => runApp(spot());
 
@@ -7,9 +8,9 @@ class spot extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('SPOT: Replace with image look for a logo or something'),
+        title: Text("SPOT/"),
         backgroundColor: Colors.black,
       ),
     ));
