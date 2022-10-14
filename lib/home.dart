@@ -32,6 +32,7 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
+          // change to list view and turn into buttons??
           decoration: const BoxDecoration(
             gradient: LinearGradient(
                 begin: Alignment.topRight,

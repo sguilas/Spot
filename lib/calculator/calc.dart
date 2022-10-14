@@ -31,6 +31,6 @@ class calculator extends StatelessWidget {
           ),
           backgroundColor: Colors.black,
         ),
-        body: const calcbody());
+        body: calcbody());
   }
 }
