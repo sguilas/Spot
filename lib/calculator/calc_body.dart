@@ -17,13 +17,6 @@ class calcbody extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Container(
-              decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Colors.white, Colors.black],
-          ))),
-          Container(
             alignment: Alignment.bottomCenter,
             child: updatetext(),
           ),

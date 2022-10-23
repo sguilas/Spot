@@ -32,7 +32,7 @@ class updatetextState extends State {
             ),
             onPressed: () => change_val(),
             child: Text(
-              "CALCULATE",
+              "CALCULATE TOTAL",
               style: GoogleFonts.raleway(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

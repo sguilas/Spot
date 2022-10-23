@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spot_app/home.dart';
+import 'package:spot_app/menus/menu_bar.dart';
 import 'calc_body.dart';
 
 class calculator extends StatelessWidget {
@@ -11,26 +11,7 @@ class calculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         // backgroundColor: Colors.white,
-        appBar: AppBar(
-          title: Image.asset(
-            'assets/spot_app_photos/logo1.png',
-            height: 87,
-            width: 87,
-          ),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Homepage()),
-              );
-            },
-            icon: const Icon(
-              Icons.arrow_circle_left_outlined,
-              color: Colors.white,
-            ),
-          ),
-          backgroundColor: Colors.black,
-        ),
+        appBar: const calc_menu_bar(),
         body: calcbody());
   }
 }
