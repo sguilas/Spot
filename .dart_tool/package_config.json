@@ -32,6 +32,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "checked_yaml",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "cli_util",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/cli_util-0.3.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.1",
       "packageUri": "lib/",
@@ -84,6 +96,12 @@
       "rootUri": "file:///Users/stefan/Documents/development/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.10.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_lints",
@@ -144,6 +162,12 @@
       "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4",
       "packageUri": "lib/",
       "languageVersion": "2.16"
+    },
+    {
+      "name": "json_annotation",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "lints",
@@ -296,6 +320,54 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "url_launcher",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "url_launcher_android",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.19",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "url_launcher_ios",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.17",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "url_launcher_linux",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_macos",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_platform_interface",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_web",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.13",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "url_launcher_windows",
+      "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/stefan/Documents/development/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.2",
       "packageUri": "lib/",
@@ -332,7 +404,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-10-11T19:58:43.783809Z",
+  "generated": "2022-10-25T18:47:10.884818Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }

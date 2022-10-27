@@ -21,7 +21,7 @@ class labels extends StatelessWidget {
           alignment: Alignment.topLeft,
           child: Text(
             "45 LBS",
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.raleway(
               fontSize: 30,
               fontWeight: FontWeight.bold,
               color: Colors.black.withOpacity(0.5),
@@ -34,7 +34,7 @@ class labels extends StatelessWidget {
           alignment: Alignment.topLeft,
           child: Text(
             "35 LBS",
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.raleway(
               fontSize: 30,
               fontWeight: FontWeight.bold,
               color: Colors.black.withOpacity(0.5),
@@ -47,7 +47,7 @@ class labels extends StatelessWidget {
           alignment: Alignment.topLeft,
           child: Text(
             "25 LBS",
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.raleway(
               fontSize: 30,
               fontWeight: FontWeight.bold,
               color: Colors.black.withOpacity(0.5),
@@ -55,12 +55,12 @@ class labels extends StatelessWidget {
           ),
         ),
         Container(
-          margin: const EdgeInsets.symmetric(vertical: 10),
+          margin: const EdgeInsets.symmetric(vertical: 20),
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
           alignment: Alignment.topLeft,
           child: Text(
             "10 LBS",
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.raleway(
               fontSize: 30,
               fontWeight: FontWeight.bold,
               color: Colors.black.withOpacity(0.5),
@@ -73,7 +73,7 @@ class labels extends StatelessWidget {
           alignment: Alignment.topLeft,
           child: Text(
             "5 LBS",
-            style: GoogleFonts.openSans(
+            style: GoogleFonts.raleway(
               fontSize: 30,
               fontWeight: FontWeight.bold,
               color: Colors.black.withOpacity(0.5),

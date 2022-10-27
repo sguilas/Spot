@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:spot_app/menus/menu_bar.dart';
-import 'package:spot_app/home.dart';
+import 'package:spot_app/Exercises/begin_exer.dart';
+import 'package:spot_app/items/buttons.dart';
+import 'package:spot_app/Exercises/begin_exer.dart';
 
 class beginner_menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const menu_bar(),
+      appBar: menu_bar(),
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
@@ -16,8 +17,7 @@ class beginner_menu extends StatelessWidget {
             alignment: Alignment.topCenter,
             child: Text(
               "BEGINNER CIRCUIT",
-              style: GoogleFonts.raleway(
-                  fontSize: 30, fontWeight: FontWeight.bold),
+              style: GoogleFonts.raleway(fontSize: 30),
             ),
           ),
           Image.asset(
@@ -39,7 +39,7 @@ class beginner_menu extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Homepage()),
+                MaterialPageRoute(builder: (context) => begin_exercise()),
               );
             },
             child: Text(

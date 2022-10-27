@@ -7,6 +7,7 @@ class spot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      title: "SPOT/",
       home: Homepage(),
     );
   }

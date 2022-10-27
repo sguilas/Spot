@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spot_app/menus/menu_bar.dart';
+import 'package:spot_app/items/buttons.dart';
 import 'calc_body.dart';
 
 class calculator extends StatelessWidget {
@@ -11,7 +11,7 @@ class calculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         // backgroundColor: Colors.white,
-        appBar: const calc_menu_bar(),
+        appBar: calc_menu_bar(),
         body: calcbody());
   }
 }

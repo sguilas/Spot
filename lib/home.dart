@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'menus/menu_list.dart';
-import 'package:spot_app/menus/menu_bar.dart';
+import 'package:spot_app/items/buttons.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({

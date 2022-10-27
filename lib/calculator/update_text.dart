@@ -26,8 +26,8 @@ class updatetextState extends State {
           child: Text('$val', style: const TextStyle(fontSize: 50))),
       Container(
           alignment: Alignment.bottomCenter,
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
+          child: TextButton(
+            style: TextButton.styleFrom(
               backgroundColor: Colors.black,
             ),
             onPressed: () => change_val(),

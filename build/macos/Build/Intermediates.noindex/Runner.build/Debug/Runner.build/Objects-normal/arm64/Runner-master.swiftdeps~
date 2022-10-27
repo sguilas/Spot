@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)"
+options: "2e5c8722025d01baa063b0a6556dc5e0db39f4f65865518a28ea068b07aaea6f"
+build_start_time: [1666649438, 335119962]
+build_end_time: [1666649438, 418431997]
+inputs:
+  "/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1666649408, 303334712]
+  "/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/macos/Runner/AppDelegate.swift": !private [1663158698, 0]
+  "/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/macos/Runner/MainFlutterWindow.swift": !private [1663158698, 0]
