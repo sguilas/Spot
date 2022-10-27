@@ -3,29 +3,29 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/items/buttons.dart';
 import 'dart:async';
 
-class minute_timer extends StatelessWidget {
+class second_timer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: minute(),
+      body: second(),
     );
   }
 }
 
-class minute extends StatefulWidget {
-  minute({Key? key}) : super(key: key);
+class second extends StatefulWidget {
+  second({Key? key}) : super(key: key);
 
   @override
-  _minuteState createState() => _minuteState();
+  _secondState createState() => _secondState();
 }
 
-class _minuteState extends State<minute> {
-  int counter = 60;
+class _secondState extends State<second> {
+  int counter = 30;
   Timer? timer;
 
   void starttimer() {
-    counter = 60;
+    counter = 30;
     if (timer != null) {
       timer!.cancel();
     }

@@ -23,7 +23,7 @@ class four_set extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             nav_button(
-                name: "TIMER",
+                name: "TIMERS",
                 dest: () {
                   Navigator.push(
                     context,

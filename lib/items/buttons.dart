@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spot_app/calculator/calc.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class calc_menu_bar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -131,7 +130,6 @@ class nav_button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        // back button
         height: 50,
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -141,7 +139,8 @@ class nav_button extends StatelessWidget {
             onPressed: dest,
             child: Text(
               name,
-              style: GoogleFonts.raleway(fontSize: 30),
+              textAlign: TextAlign.center,
+              style: GoogleFonts.raleway(fontSize: 25),
             )));
   }
 }
