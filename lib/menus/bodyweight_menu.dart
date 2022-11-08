@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:spot_app/Exercises/body_exer.dart';
 import 'package:spot_app/items/buttons.dart';
-import 'package:spot_app/home.dart';
 
 class bodyweight_menu extends StatelessWidget {
   @override
@@ -28,7 +28,7 @@ class bodyweight_menu extends StatelessWidget {
             padding: const EdgeInsets.all(15),
             alignment: Alignment.topCenter,
             child: Text(
-              "You are the resistance. Do this 3 times.",
+              "You are the resistance. Made for weirdos that think lifting iron isn't hard enough. Each exercise has its own rep range. Have fun.",
               style: GoogleFonts.raleway(fontSize: 20),
               textAlign: TextAlign.center,
             ),
@@ -38,7 +38,7 @@ class bodyweight_menu extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Homepage()),
+                MaterialPageRoute(builder: (context) => body_exercise()),
               );
             },
             child: Text(

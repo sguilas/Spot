@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:spot_app/Exercises/inter_exer.dart';
 import 'package:spot_app/items/buttons.dart';
-import 'package:spot_app/home.dart';
 
 class intermediate_menu extends StatelessWidget {
   @override
@@ -38,7 +38,7 @@ class intermediate_menu extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Homepage()),
+                MaterialPageRoute(builder: (context) => inter_exercise()),
               );
             },
             child: Text(

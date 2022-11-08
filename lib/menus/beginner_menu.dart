@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/Exercises/begin_exer.dart';
 import 'package:spot_app/items/buttons.dart';
-import 'package:spot_app/Exercises/begin_exer.dart';
 
 class beginner_menu extends StatelessWidget {
   @override
