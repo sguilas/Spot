@@ -14,6 +14,8 @@ using Firebase as backend. The database will be used to store custom workouts fo
 
 Right now there are no plans to release this to any app store.
 
+THE PHOTOS USED HERE ARE NOT MINE AND ARE FOUND ONLINE. USED FOR EDUCATIONAL PURPOSES ONLY
+
 ////////////////HOW TO USE SPOT WORKOUT LOGGER/////////////////////////////////////////////
 
 Run it on an emulator. Flutter should handle the rest.
