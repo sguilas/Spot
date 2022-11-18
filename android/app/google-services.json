@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "408655926782",
+    "project_id": "spot-workout-logger",
+    "storage_bucket": "spot-workout-logger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408655926782:android:37519ab54bbdf809a1dcaf",
+        "android_client_info": {
+          "package_name": "com.example.spot_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408655926782-rhvhkcata14nap9pufsbhptnjgv0j1v8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdIuf97lUPNAEhS_OLBz1mAZfLV3uqLek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408655926782-rhvhkcata14nap9pufsbhptnjgv0j1v8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "408655926782-njd20dfohr4g5kj0smrqbfnm017gr34l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.spotApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

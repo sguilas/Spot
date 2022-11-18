@@ -1,0 +1,4 @@
+#Wed Nov 16 20:10:49 EST 2022
+base.0=/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

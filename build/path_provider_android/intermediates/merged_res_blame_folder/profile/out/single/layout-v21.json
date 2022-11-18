@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/build/path_provider_android/intermediates/merged_res/profile/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/stefan/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/build/path_provider_android/intermediates/merged_res/profile/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/stefan/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/build/path_provider_android/intermediates/merged_res/profile/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/stefan/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/stefan/Documents/development/Spot_Project/Spot_Workout_Logger_CS184_Project/build/path_provider_android/intermediates/merged_res/profile/layout-v21/notification_action.xml",
+        "source": "/Users/stefan/.gradle/caches/transforms-3/aa701b47cec244085d46a1a42fcc7fb9/transformed/core-1.6.0/res/layout-v21/notification_action.xml"
+    }
+]

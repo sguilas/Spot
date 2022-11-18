@@ -8,7 +8,6 @@ class custom_menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: menu_bar(),
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[

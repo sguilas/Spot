@@ -13,52 +13,55 @@ class build_list extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(padding: const EdgeInsets.all(15.0), children: <Widget>[
-      menu_button(
-        name: "BEGINNER",
-        dest: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => beginner_menu()),
-          );
-        },
-      ),
-      menu_button(
-        name: "INTERMEDIATE",
-        dest: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => intermediate_menu()),
-          );
-        },
-      ),
-      menu_button(
-        name: "ADVANCED",
-        dest: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => advanced_menu()),
-          );
-        },
-      ),
-      menu_button(
-        name: "BODYWEIGHT",
-        dest: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => bodyweight_menu()),
-          );
-        },
-      ),
-      menu_button(
-        name: "CUSTOM",
-        dest: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => custom_menu()),
-          );
-        },
-      ),
-    ]);
+    return Scaffold(
+        appBar: const menu_bar(),
+        backgroundColor: Colors.white,
+        body: ListView(padding: const EdgeInsets.all(15.0), children: <Widget>[
+          menu_button(
+            name: "BEGINNER",
+            dest: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => beginner_menu()),
+              );
+            },
+          ),
+          menu_button(
+            name: "INTERMEDIATE",
+            dest: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => intermediate_menu()),
+              );
+            },
+          ),
+          menu_button(
+            name: "ADVANCED",
+            dest: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => advanced_menu()),
+              );
+            },
+          ),
+          menu_button(
+            name: "BODYWEIGHT",
+            dest: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => bodyweight_menu()),
+              );
+            },
+          ),
+          menu_button(
+            name: "CUSTOM",
+            dest: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => custom_menu()),
+              );
+            },
+          ),
+        ]));
   }
 }
