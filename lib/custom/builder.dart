@@ -4,9 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/custom/saved_page.dart';
 
 String conv(List arr) {
-  String end = arr[0];
+  String end = "";
 
-  for (int i = 1; i < arr.length; i++) {
+  for (int i = 0; i < arr.length; i++) {
     // ignore: prefer_interpolation_to_compose_strings
     end = end + arr[i] + ",";
   }
