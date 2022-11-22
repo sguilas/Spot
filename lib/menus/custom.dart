@@ -1,13 +1,14 @@
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/custom/load.dart';
 import 'package:spot_app/custom/builder.dart';
-import 'package:spot_app/items/buttons.dart';
 
 class custom_menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+        child: Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
@@ -48,10 +49,18 @@ class custom_menu extends StatelessWidget {
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () {
+            onPressed: () async {
+              String workout = "";
+              DatabaseReference ref = FirebaseDatabase.instance.ref();
+              final snapshot = await ref.child('workout').get();
+              workout = snapshot.value as String;
+              // ignore: use_build_context_synchronously
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => load()),
+                MaterialPageRoute(
+                    builder: (context) => load_workout(
+                          workout: workout,
+                        )),
               );
             },
             child: Text(
@@ -71,6 +80,6 @@ class custom_menu extends StatelessWidget {
           )
         ],
       ),
-    );
+    ));
   }
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/Exercises/adv_exer.dart';
-import 'package:spot_app/items/buttons.dart';
 
 class advanced_menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+        child: Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
@@ -57,6 +57,6 @@ class advanced_menu extends StatelessWidget {
           )
         ],
       ),
-    );
+    ));
   }
 }
