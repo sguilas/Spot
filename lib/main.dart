@@ -15,6 +15,7 @@ class spot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "SPOT/",
       home: Homepage2(),
     );

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/items/buttons.dart';
-import 'package:spot_app/menus/custom.dart';
+import 'package:spot_app/main.dart';
 
-class saved extends StatelessWidget {
+class finished extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,9 +13,9 @@ class saved extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WORKOUT SAVED",
+              "WORKOUT COMPLETED",
               style: GoogleFonts.raleway(
-                fontSize: 75,
+                fontSize: 70,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
@@ -24,7 +24,7 @@ class saved extends StatelessWidget {
               name: "PRESS TO CONTINUE",
               dest: () {
                 Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (context) => custom_menu()));
+                    MaterialPageRoute(builder: (context) => spot()));
               },
             )
           ],

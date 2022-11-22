@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:spot_app/items/buttons.dart';
 
 class Homepage2 extends StatelessWidget {
@@ -11,6 +12,7 @@ class Homepage2 extends StatelessWidget {
     return Scaffold(
         extendBodyBehindAppBar: true,
         appBar: AppBar(
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
           iconTheme: const IconThemeData(color: Colors.black),
           backgroundColor: const Color.fromRGBO(1, 1, 1, 255),
           elevation: 0,

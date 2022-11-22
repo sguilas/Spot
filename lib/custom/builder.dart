@@ -140,8 +140,8 @@ class _builderState extends State<builder> {
                 "workout": exer,
               });
               // ignore: use_build_context_synchronously
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => saved()));
+              Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => saved()));
             },
             child: Text(
               "SAVE WORKOUT",

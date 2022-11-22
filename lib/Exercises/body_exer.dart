@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:spot_app/home.dart';
 import 'package:spot_app/items/buttons.dart';
+import 'package:spot_app/items/finished.dart';
 import 'package:spot_app/items/sets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -43,6 +45,7 @@ class _body_exerciseState extends State<body_exercise> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
         iconTheme: const IconThemeData(color: Colors.black),
         backgroundColor: const Color.fromRGBO(1, 1, 1, 255),
         elevation: 0,
@@ -78,9 +81,9 @@ class _body_exerciseState extends State<body_exercise> {
           ),
           ListTile(
             onTap: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => const Homepage2()),
+                MaterialPageRoute(builder: (context) => finished()),
               );
             },
             title: const Text(

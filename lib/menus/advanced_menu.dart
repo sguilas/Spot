@@ -27,7 +27,7 @@ class advanced_menu extends StatelessWidget {
             padding: const EdgeInsets.all(15),
             alignment: Alignment.topCenter,
             child: Text(
-              "You do you. 10-15.",
+              "You don't need somebody else to tell you what to do. 10-15.",
               style: GoogleFonts.raleway(fontSize: 20),
               textAlign: TextAlign.center,
             ),

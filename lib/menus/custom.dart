@@ -3,7 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/custom/load.dart';
 import 'package:spot_app/custom/builder.dart';
-import 'package:spot_app/main.dart';
+
+List<String> conv(String workout) {
+  List<String> arr = workout.split(",");
+  List<String> fin = [];
+  for (int i = 0; i < arr.length - 1; i++) {
+    fin.add(arr[i]);
+  }
+  fin.add("FINISH");
+  return fin;
+}
 
 class custom_menu extends StatelessWidget {
   @override
@@ -51,17 +60,15 @@ class custom_menu extends StatelessWidget {
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
             onPressed: () async {
-              String workout = "";
               DatabaseReference ref = FirebaseDatabase.instance.ref();
               final snapshot = await ref.child('workout').get();
-              workout = snapshot.value as String;
+              String workout = snapshot.value as String;
+              List<String> arr = conv(workout);
               // ignore: use_build_context_synchronously
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => load_workout(
-                          workout: workout,
-                        )),
+                    builder: (context) => load_workout(workout: arr)),
               );
             },
             child: Text(
@@ -72,8 +79,7 @@ class custom_menu extends StatelessWidget {
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
             onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => spot()));
+              Navigator.pop(context);
             },
             child: Text(
               "RETURN",
