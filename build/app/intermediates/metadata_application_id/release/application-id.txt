@@ -1,1 +1,0 @@
-com.example.spot_app
