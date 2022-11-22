@@ -11,7 +11,8 @@ class calculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         // backgroundColor: Colors.white,
-        appBar: calc_menu_bar(),
+        extendBodyBehindAppBar: true,
+        appBar: const calc_menu_bar(),
         body: calcbody());
   }
 }

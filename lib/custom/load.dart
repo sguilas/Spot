@@ -11,10 +11,17 @@ class load_workout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const calc_menu_bar(),
+      //extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: const Color.fromRGBO(1, 1, 1, 255),
+        elevation: 0,
+      ),
+      drawer: nav_drawer(context),
       body: Column(
         children: <Widget>[
           //ListView.builder(itemBuilder: ),
+          Text(workout),
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
             onPressed: () {

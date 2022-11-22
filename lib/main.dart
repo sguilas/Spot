@@ -16,7 +16,7 @@ class spot extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "SPOT/",
-      home: Homepage(),
+      home: Homepage2(),
     );
   }
 }

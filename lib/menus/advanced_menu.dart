@@ -5,10 +5,10 @@ import 'package:spot_app/Exercises/adv_exer.dart';
 class advanced_menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
-      backgroundColor: Colors.white,
+    return Scaffold(
+      backgroundColor: const Color.fromRGBO(226, 225, 226, 1),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
             padding: const EdgeInsets.all(15),
@@ -57,6 +57,6 @@ class advanced_menu extends StatelessWidget {
           )
         ],
       ),
-    ));
+    );
   }
 }

@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:spot_app/calculator/calc.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:spot_app/main.dart';
+import 'package:spot_app/menus/advanced_menu.dart';
+import 'package:spot_app/menus/beginner_menu.dart';
+import 'package:spot_app/menus/bodyweight_menu.dart';
+import 'package:spot_app/menus/custom.dart';
+import 'package:spot_app/menus/intermediate_menu.dart';
 
 class calc_menu_bar extends StatelessWidget implements PreferredSizeWidget {
   @override
@@ -12,82 +18,19 @@ class calc_menu_bar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Image.asset(
-        'assets/spot_app_photos/logo1.png',
-        height: 87,
-        width: 87,
-      ),
+      iconTheme: IconThemeData(color: Colors.black),
+      backgroundColor: Color.fromRGBO(1, 1, 1, 255),
+      elevation: 0,
       leading: IconButton(
         onPressed: () {
           Navigator.pop(context);
         },
         icon: const Icon(
-          Icons.arrow_circle_left_outlined,
-          color: Colors.white,
+          Icons.arrow_back_ios_new,
+          color: Colors.black,
         ),
       ),
-      backgroundColor: Colors.black,
     );
-  }
-}
-
-class menu_bar extends StatelessWidget implements PreferredSizeWidget {
-  @override
-  Size get preferredSize => const Size.fromHeight(60);
-  const menu_bar({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return AppBar(
-      title: Image.asset(
-        'assets/spot_app_photos/logo1.png',
-        height: 87,
-        width: 87,
-      ),
-      leading: IconButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const calculator()),
-          );
-        },
-        icon: const Icon(
-          Icons.self_improvement_sharp,
-          color: Colors.white,
-        ),
-      ),
-      backgroundColor: Colors.black,
-    );
-  }
-}
-
-class menu_button extends StatelessWidget {
-  final String name;
-  final Function()? dest;
-  const menu_button({
-    required this.name,
-    this.dest,
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        margin: const EdgeInsets.all(5),
-        child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.white70,
-              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-            ),
-            onPressed: dest,
-            child: Text(name,
-                textAlign: TextAlign.center,
-                style: GoogleFonts.raleway(
-                  fontSize: 40,
-                  color: Colors.black,
-                ))));
   }
 }
 
@@ -143,4 +86,88 @@ class nav_button extends StatelessWidget {
               style: GoogleFonts.raleway(fontSize: 25),
             )));
   }
+}
+
+Drawer nav_drawer(BuildContext context) {
+  return Drawer(
+    backgroundColor: const Color.fromRGBO(226, 225, 226, 1),
+    child: ListView(
+      children: [
+        Image.asset(
+          "assets/spot_app_photos/logo2.png",
+          height: 200,
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => spot()),
+            );
+          },
+          leading: const Icon(Icons.home_filled),
+          title: const Text("HOME"),
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const calculator()),
+            );
+          },
+          leading: const Icon(Icons.calculate),
+          title: const Text("CALCULATOR"),
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => custom_menu()),
+            );
+          },
+          leading: const Icon(Icons.dashboard),
+          title: const Text("CUSTOM"),
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => beginner_menu()),
+            );
+          },
+          leading: const Icon(Icons.adjust),
+          title: const Text("BEGINNER"),
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => intermediate_menu()),
+            );
+          },
+          leading: const Icon(Icons.adjust),
+          title: const Text("INTERMEDIATE"),
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => advanced_menu()),
+            );
+          },
+          leading: const Icon(Icons.adjust),
+          title: const Text("ADVANCED"),
+        ),
+        ListTile(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => bodyweight_menu()),
+            );
+          },
+          leading: const Icon(Icons.adjust),
+          title: const Text("BODYWEIGHT"),
+        ),
+      ],
+    ),
+  );
 }

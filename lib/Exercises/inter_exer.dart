@@ -4,110 +4,92 @@ import 'package:spot_app/items/buttons.dart';
 import 'package:spot_app/items/sets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class inter_exercise extends StatelessWidget {
+class inter_exercise extends StatefulWidget {
   @override
+  State<inter_exercise> createState() => _inter_exerciseState();
+}
+
+class _inter_exerciseState extends State<inter_exercise> {
+  final completed = Set<String>();
+  @override
+  Widget row_build(String ex) {
+    final saved = completed.contains(ex);
+    return ListTile(
+      trailing: Icon(
+          saved
+              ? Icons.check_circle_outline_outlined
+              : Icons.check_circle_outline_outlined,
+          color: saved ? Colors.green : Colors.red),
+      title: Text(
+        ex,
+      ),
+      onTap: () {
+        setState(() {
+          if (saved) {
+            completed.remove(ex);
+          } else {
+            completed.add(ex);
+          }
+        });
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => three_set()),
+        );
+      },
+    );
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const menu_bar(),
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: const Color.fromRGBO(1, 1, 1, 255),
+        elevation: 0,
+      ),
+      drawer: nav_drawer(context),
       backgroundColor: Colors.white,
       body: ListView(
         children: <Widget>[
-          menu_button(
-            name: "BARBELL SQUATS",
-            dest: () {
+          row_build("BARBELL SQUATS"),
+          row_build(
+            "BENCH PRESS",
+          ),
+          row_build(
+            "SEATED CABLE ROW",
+          ),
+          row_build(
+            "DUMBBELL SHOULDER PRESS",
+          ),
+          row_build(
+            "LAT PULLDOWN",
+          ),
+          row_build(
+            "LEG CURLS",
+          ),
+          row_build(
+            "TRICEP PUSHDOWN",
+          ),
+          row_build(
+            "BICEP CURLS",
+          ),
+          row_build(
+            "HANGING LEG RAISES",
+          ),
+          ListTile(
+            onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => three_set()),
+                MaterialPageRoute(builder: (context) => const Homepage2()),
               );
             },
-          ),
-          menu_button(
-            name: "BENCH PRESS",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          menu_button(
-            name: "SEATED CABLE ROW",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          menu_button(
-            name: "DUMBBELL SHOULDER PRESS",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          menu_button(
-            name: "LAT PULLDOWNS",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          menu_button(
-            name: "LEG CURLS",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          menu_button(
-            name: "TRICEP PUSHDOWN",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          menu_button(
-            name: "BICEP CURLS",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          menu_button(
-            name: "HANGING LEG RAISES",
-            dest: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => three_set()),
-              );
-            },
-          ),
-          SizedBox(
-              height: 100,
-              child: ElevatedButton(
-                  style:
-                      ElevatedButton.styleFrom(backgroundColor: Colors.black),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const Homepage()),
-                    );
-                  },
-                  child: Text(
-                    "FINISH",
-                    style: GoogleFonts.raleway(fontSize: 40),
-                  ))),
+            title: const Text(
+              "FINISH",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
+            ),
+            tileColor: Colors.black,
+          )
         ],
       ),
     );

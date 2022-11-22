@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:spot_app/custom/load.dart';
 import 'package:spot_app/custom/builder.dart';
+import 'package:spot_app/main.dart';
 
 class custom_menu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child: Scaffold(
-      backgroundColor: Colors.white,
+    return Scaffold(
+      backgroundColor: const Color.fromRGBO(226, 225, 226, 1),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Container(
             padding: const EdgeInsets.all(15),
@@ -71,7 +72,8 @@ class custom_menu extends StatelessWidget {
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => spot()));
             },
             child: Text(
               "RETURN",
@@ -80,6 +82,6 @@ class custom_menu extends StatelessWidget {
           )
         ],
       ),
-    ));
+    );
   }
 }

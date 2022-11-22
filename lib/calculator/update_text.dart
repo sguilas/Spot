@@ -18,12 +18,11 @@ class updatetextState extends State {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Center(
-            child: Column(children: <Widget>[
+    return Center(
+        child: Column(children: <Widget>[
       Container(
           padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
-          child: Text('$val', style: const TextStyle(fontSize: 50))),
+          child: Text('$val LBS', style: const TextStyle(fontSize: 50))),
       Container(
           alignment: Alignment.bottomCenter,
           child: TextButton(
@@ -39,6 +38,6 @@ class updatetextState extends State {
               ),
             ),
           ))
-    ])));
+    ]));
   }
 }

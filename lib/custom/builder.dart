@@ -32,7 +32,7 @@ class _builderState extends State<builder> {
         saved
             ? Icons.check_circle_outline_outlined
             : Icons.check_circle_outline_outlined,
-        color: saved ? Colors.green : null,
+        color: saved ? const Color.fromARGB(255, 0, 140, 254) : null,
       ),
       onTap: () {
         setState(() {
