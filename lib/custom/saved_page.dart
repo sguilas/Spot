@@ -10,7 +10,8 @@ class saved extends StatelessWidget {
         backgroundColor: Colors.black,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_circle_left_outlined, color: Colors.white),
+          icon:
+              const Icon(Icons.arrow_circle_left_outlined, color: Colors.white),
           onPressed: () {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => spot()));

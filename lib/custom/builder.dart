@@ -7,7 +7,8 @@ String conv(List arr) {
   String end = arr[0];
 
   for (int i = 1; i < arr.length; i++) {
-    end = "$end," + arr[i];
+    // ignore: prefer_interpolation_to_compose_strings
+    end = end + arr[i] + ",";
   }
   return end;
 }
@@ -70,7 +71,7 @@ class _builderState extends State<builder> {
                     color: Colors.white),
               )),
           select("BENCH PRESS"),
-          select("DUMBBELL"),
+          select("DUMBBELL BENCH PRESS"),
           select("CABLE CHEST FLYS"),
           select("PUSH UPS"),
           Container(
@@ -131,10 +132,14 @@ class _builderState extends State<builder> {
 
           ElevatedButton(
             style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () {
+            onPressed: () async {
               List arr = workout.toList();
               String exer = conv(arr);
-
+              DatabaseReference ref = FirebaseDatabase.instance.ref();
+              await ref.set({
+                "workout": exer,
+              });
+              // ignore: use_build_context_synchronously
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => saved()));
             },
