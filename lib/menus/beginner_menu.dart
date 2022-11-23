@@ -32,28 +32,30 @@ class beginner_menu extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () {
+          ListTile(
+            onTap: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => begin_exercise()),
               );
             },
-            child: Text(
+            title: const Text(
               "BEGIN",
-              style: GoogleFonts.raleway(fontSize: 20),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
             ),
+            tileColor: Colors.black,
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () {
+          ListTile(
+            onTap: () {
               Navigator.pop(context);
             },
-            child: Text(
+            title: const Text(
               "RETURN",
-              style: GoogleFonts.raleway(fontSize: 20),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
             ),
+            tileColor: Colors.black,
           )
         ],
       ),

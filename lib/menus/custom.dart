@@ -44,22 +44,20 @@ class custom_menu extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () {
+          ListTile(
+            onTap: () {
               Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => builder()),
-              );
+                  context, MaterialPageRoute(builder: (context) => builder()));
             },
-            child: Text(
+            title: const Text(
               "BUILD",
-              style: GoogleFonts.raleway(fontSize: 20),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
             ),
+            tileColor: Colors.black,
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () async {
+          ListTile(
+            onTap: () async {
               DatabaseReference ref = FirebaseDatabase.instance.ref();
               final snapshot = await ref.child('workout').get();
               String workout = snapshot.value as String;
@@ -71,20 +69,23 @@ class custom_menu extends StatelessWidget {
                     builder: (context) => load_workout(workout: arr)),
               );
             },
-            child: Text(
+            title: const Text(
               "LOAD SAVED WORKOUT",
-              style: GoogleFonts.raleway(fontSize: 20),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
             ),
+            tileColor: Colors.black,
           ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () {
+          ListTile(
+            onTap: () {
               Navigator.pop(context);
             },
-            child: Text(
+            title: const Text(
               "RETURN",
-              style: GoogleFonts.raleway(fontSize: 20),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
             ),
+            tileColor: Colors.black,
           )
         ],
       ),

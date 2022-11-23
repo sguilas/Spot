@@ -63,12 +63,9 @@ class _builderState extends State<builder> {
               )),
           Container(
               color: Colors.black,
-              child: Text(
+              child: const Text(
                 "CHEST",
-                style: GoogleFonts.raleway(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                style: TextStyle(fontSize: 30, color: Colors.white),
               )),
           select("BENCH PRESS"),
           select("DUMBBELL BENCH PRESS"),
@@ -76,12 +73,9 @@ class _builderState extends State<builder> {
           select("PUSH UPS"),
           Container(
               color: Colors.black,
-              child: Text(
+              child: const Text(
                 "ARMS",
-                style: GoogleFonts.raleway(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                style: TextStyle(fontSize: 30, color: Colors.white),
               )),
           select("BARBELL CURLS"),
           select("HAMMER CURLS"),
@@ -89,12 +83,9 @@ class _builderState extends State<builder> {
           select("TRICEP EXTENSIONS"),
           Container(
               color: Colors.black,
-              child: Text(
+              child: const Text(
                 "BACK",
-                style: GoogleFonts.raleway(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                style: TextStyle(fontSize: 30, color: Colors.white),
               )),
           select("LAT PULLDOWN"),
           select("SEATED CABLE ROW"),
@@ -102,12 +93,9 @@ class _builderState extends State<builder> {
           select("REVERSE FLYS"),
           Container(
               color: Colors.black,
-              child: Text(
+              child: const Text(
                 "LEGS",
-                style: GoogleFonts.raleway(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                style: TextStyle(fontSize: 30, color: Colors.white),
               )),
           select("BARBELL SQUAT"),
           select("DEADLIFT"),
@@ -116,12 +104,9 @@ class _builderState extends State<builder> {
           select("HAMSTRING CURLS"),
           Container(
               color: Colors.black,
-              child: Text(
+              child: const Text(
                 "CORE",
-                style: GoogleFonts.raleway(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                style: TextStyle(fontSize: 30, color: Colors.white),
               )),
           select("SIT UPS"),
           select("HANGING LEG RAISES"),
@@ -130,9 +115,8 @@ class _builderState extends State<builder> {
 
 // THIS IS WHERE YOULL SAVE THE SET TO FIREBASE
 
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () async {
+          ListTile(
+            onTap: () async {
               List arr = workout.toList();
               String exer = conv(arr);
               DatabaseReference ref = FirebaseDatabase.instance.ref();
@@ -143,23 +127,23 @@ class _builderState extends State<builder> {
               Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => saved()));
             },
-            child: Text(
+            title: const Text(
               "SAVE WORKOUT",
-              style: GoogleFonts.raleway(fontSize: 50),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
             ),
+            tileColor: Colors.black,
           ),
-          const SizedBox(
-            height: 10,
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
-            onPressed: () {
+          ListTile(
+            onTap: () {
               Navigator.pop(context);
             },
-            child: Text(
+            title: const Text(
               "RETURN",
-              style: GoogleFonts.raleway(fontSize: 50),
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
             ),
+            tileColor: Colors.black,
           )
         ],
       )),
