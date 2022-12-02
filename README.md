@@ -21,14 +21,15 @@ THE PHOTOS USED HERE ARE NOT MINE AND ARE FOUND ONLINE. USED FOR EDUCATIONAL PUR
 Run it on an emulator. Flutter should handle the rest.
 
 Main Screen:
-Users have a selection of Beginner, Intermediate, Advanced, Bodyweight workouts.
-Once selected click the exercise you want to do then click the check marks for every set you complete.
+App drawer will give links to various options for the app. Including calculator, various prebuilt circuits and the custom workout builder.
 
 Timer:
-Users have access to a timer in every workout. The timers are 30 secs, 1 minute, 3 minutes, and 5 minutes
+User have access to a timer in every workout. The timers are 30 secs, 1 minute, 3 minutes, and 5 minutes
 
 Calculator:
-At the top left, there is a button for the palte calculator that the user has access to anytime. Use that to calcualte the weight you want on the bar.
+In the drawer which user have access to in every workout. Use to add up weight used when using barbell.
 
 Custom:
-*TO BE ADDED*
+In the app drawer, select the custom option to create a workout or load a previously saved workout.
+To build a workout, user chooses from a repdetermined list then hits save.
+Choose the load custom workout to load the previously saved workout from the database. Custom workout tiles act similarly to prebuilt tiles. Each have the ability to lead to set checkers and timers, and provides visula updates when workout is completed.
